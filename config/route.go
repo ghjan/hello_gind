@@ -1,11 +1,11 @@
-package main
+package config
 
 import (
 	. "github.com/ghjan/hello_gind/apis"
 	"github.com/gin-gonic/gin"
 )
 
-func initRouter() *gin.Engine {
+func InitRouter() *gin.Engine {
 	router := gin.Default()
 
 	router.GET("/", IndexApi)
