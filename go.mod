@@ -2,4 +2,7 @@ module github.com/ghjan/hello_gind
 
 go 1.12
 
-require golang.org/x/vgo v0.0.0-20180912184537-9d567625acf4 // indirect
+require (
+	github.com/gin-gonic/gin v1.4.0
+	github.com/go-sql-driver/mysql v1.4.1
+)

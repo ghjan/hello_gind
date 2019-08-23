@@ -10,15 +10,17 @@ func InitRouter() *gin.Engine {
 
 	router.GET("/", IndexApi)
 
-	router.POST("/person", AddPersonApi)
+	router.POST("/person/", AddPersonApi)
 
-	router.GET("/persons", GetPersonsApi)
+	router.GET("/persons/", GetPersonsApi)
 
-	router.GET("/person/:id", GetPersonApi)
+	router.GET("/person/:id/", GetPersonApi)
 
-	router.PUT("/person/:id", ModPersonApi)
+	router.PUT("/person/:id/", ModPersonApi)
 
-	router.DELETE("/person/:id", DelPersonApi)
+	router.DELETE("/person/:id/", DelPersonApi)
 
+	router.RedirectTrailingSlash = true
+	router.RedirectFixedPath = true
 	return router
 }
