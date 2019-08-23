@@ -3,6 +3,7 @@ package config
 import (
 	. "github.com/ghjan/hello_gind/apis"
 	"github.com/gin-gonic/gin"
+
 )
 
 func InitRouter() *gin.Engine {
