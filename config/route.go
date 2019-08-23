@@ -20,5 +20,7 @@ func InitRouter() *gin.Engine {
 
 	router.DELETE("/person/:id/", DelPersonApi)
 
+	router.RedirectTrailingSlash = true
+	router.RedirectFixedPath = true
 	return router
 }
